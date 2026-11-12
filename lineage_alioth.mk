@@ -38,3 +38,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.5.0.TKHMIXM:user/release-keys
+# Solina branding: developer for alioth is Solina (Solina-Development)
+# LineageOS 24 Settings has no Maintainer row; the name is in build.prop.
+# ROM name stays Lunaris (no version override).
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.lunaris.maintainer=Solina \
+    ro.solina.maintainer=Solina
